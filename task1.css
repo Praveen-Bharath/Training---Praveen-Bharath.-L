@@ -1,0 +1,46 @@
+*{
+    margin:0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header{
+    text-align: center;
+    color:rgb(rgb(168, 70, 70), rgb(52,rgb(67, 67, 155), 52), blue);
+    text-decoration: underline orangered solid;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-underline-position: under;    
+}
+img{
+    width: 150px;
+    border-radius: 10px;
+    height:120px;
+    border-style: solid;
+    border-color: tomato;
+    border-width: 3px;
+    display: flex;
+ }
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+.food{
+    display: flex;
+    flex-wrap: wrap;
+}
+p{
+    padding: 5px;
+    text-decoration: underline dotted orange ;  
+}
+button{
+    background: white;
+    padding: 2px;
+    margin: 20px;
+    border-style: solid;
+    border-color: orange;
+    border-width: 3px;
+    border-radius: 5px;
+    font-weight: bold;
+}

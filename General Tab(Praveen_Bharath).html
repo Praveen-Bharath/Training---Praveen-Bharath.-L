@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            Menu Page
+        </title>
+        <meta charset="UTF-8">
+        <meta name="Generator" content="EditPlus®">
+        <meta name="Author" content="">
+        <meta name="Keywords" content="">
+        <meta name="Description" content="">
+      <link rel="icon" href="menu_icon.jpg" type="image/icon type">
+      <link rel="stylesheet" href="task1.css" >  
+    </head>
+    <body>  
+        <div class="container">
+        <header>
+            <h2>Our Menu</h2>
+        </header>
+            <div class="main">
+                <button onclick="openpage('breakfast',this,'white')"> &ensp;Breakfast&ensp; </button>
+                <button onclick="openpage('lunch',this,'white')"> &ensp;Lunch&ensp;</button>
+                <button onclick="openpage('dinner',this,'white')"> &ensp;Dinner&ensp; </button>
+            </div>
+        <div class="food" id="breakfast">
+            <h1>breakfast</h1>
+            <img src="idly.jpg">
+            <p>Idly&emsp;$7.5</p>
+            <img src="dosa.jfif">
+            <p>Dosai&emsp;$10.0</p>
+            <img src="pongal.jfif">
+            <p>Pongal&emsp;$12.0</p>
+            <img src="poori.jfif">
+            <p>Poori&emsp;$8.0</p>
+        </div>
+        <div class="food" id="lunch">
+            <h1>lunch</h1>
+            <img src="meals.jpg">
+            <p>South Indian Meals&emsp;$20.0</p>
+            <img src="briyani.jpg">
+            <p>Briyani&emsp;$16.5</p>
+            <img src="lemon.jpg">
+            <p>Lemon Rice&emsp;$12.0</p>
+            <img src="curd.jpg">
+            <p>Curd Rice&emsp;$10.0</p>
+        </div>
+        <div class="food" id="dinner">
+            <h1>dinner</h1>
+            <img src="roast.jpg">
+            <p>Roast&emsp;$12.5</p>
+            <img src="chapathi.jpg">
+            <p>Chapathi&emsp;$8.5</p>
+            <img src="naan.jpg">
+            <p>Butter Naan&emsp;$14.5</p>
+            <img src="noodles.jfif">
+            <p>Noodles&emsp;$15.5</p>
+        </div>
+        </div>
+        <script type="text/javascript"> 
+            function openpage(pageName,element,color){
+         var i, food, main;
+         food=document.getElementsByClassName("food");
+         for(i =0; i<food.length; i++){
+             food[i].style.display ="none";
+         }
+          main = document.getElementsByClassName("main");
+          for(i = 0; i<main.length; i++){
+              main[i].style.backgroundcolor="";
+          }
+          document.getElementById(pageName).style.display="block";
+           element.style.backgroundcolor = color;
+     } 
+       </script>
+        </body>
+        </html>
