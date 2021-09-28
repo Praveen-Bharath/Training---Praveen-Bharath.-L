@@ -14,7 +14,7 @@ function readFormData() {
     var formData = {};
     formData["fullName"] = document.getElementById("fullName").value;
     formData["age"] = document.getElementById("age").value;
-    formData["gender"] = document.getElementById("gender").value;
+    formData["gender"] = document.querySelector('[name="gender"]:checked').value;
     selectedElement = document.querySelector('.hobby1');
     formData["hobby"] = selectedElement.value;
     return formData;
